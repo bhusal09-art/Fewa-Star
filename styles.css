@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-synthesis: none; text-rendering: optimizeLegibility; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f5f8f6; color: #183538; font-family: 'DM Sans', sans-serif; }
+button, input, select { font: inherit; }
+::selection { background: #c8eee0; color: #082f36; }
+.hero-image { background-image: linear-gradient(90deg, rgba(4,31,35,.82) 0%, rgba(4,31,35,.58) 44%, rgba(4,31,35,.10) 100%), url('https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=2200&q=90'); background-position: center 48%; background-size: cover; }
+@media (max-width: 640px) { .hero-image { background-position: 58% center; } }
+
+.input-field {
+  width: 100%;
+  border: 1px solid #dce7e2;
+  border-radius: 12px;
+  padding: 12px 13px 12px 44px;
+  background: #fff;
+  color: #183538;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  border-color: #0e7772;
+  box-shadow: 0 0 0 3px rgba(14,119,114,.12);
+}
